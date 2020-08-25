@@ -5,7 +5,7 @@
 
 body { 
     font-family: "Courier New", Courier, monospace;
-    background: url("../images/constructive-backdrop.jpg") no-repeat center center fixed; 
+    background: url("../images/Sea.gif") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -25,8 +25,9 @@ h1, h3, p {
 h1 {
     margin: 50px 0 0 50px;
     height: 175px;
-    background-image: url("../images/constructive-logo.gif");
+    /* background-image: url("../images/clock.gif"); */
     background-repeat: no-repeat;
+    background-size: contain;
     text-indent: -9999px;
     border-top: 1px solid #bcbdc0;
     border-left: 1px solid #bcbdc0;
@@ -65,3 +66,16 @@ html{
     min-height:100%;}
 body{
     min-height:100%;}
+
+img#gifImg{
+    width: 181px;
+    position: absolute;
+    top: 59px;
+    left: 118px;
+}
+
+td{
+    font-size: xx-large;
+    font-weight: bolder;
+    /* text-align: initial; */
+}
