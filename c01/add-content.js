@@ -1,8 +1,8 @@
 
-
+   
 var today = new Date();
  var hourNow = today.getHours();
- var greeting = getGreeting(hourNow);
+//  var greeting = getGreeting(hourNow);
 
 
 
@@ -29,20 +29,19 @@ var today = new Date();
    }
 }
 
+
+
+
+function getGreeting(){
    var hour = prompt('Now.. What is the hour!');
+   var greeting;
 
-
-function getGreeting(hour){
-  var greeting; 
-var sum
-if (hour > 24) {greeting= 'Welcome!';}
+   if (hour > 24) {greeting= 'Welcome!';}
    else if ( hour > 18) { greeting = 'Good evening!';}
    else if (hour > 12) { greeting = 'Good afternoon!';}
    else if (hour > 0) { greeting = 'Good morning!';}
    
    return greeting;
-
-  
 }
 
-document.write( '<h3>' + greeting + '</h3>'); 
+document.write( '<h3>' + getGreeting() + '</h3>'); 
