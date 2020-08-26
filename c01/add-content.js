@@ -1,12 +1,48 @@
-var num = prompt('What is the Time now?');
-var today= new Date();
- var hourNow = today.getHours();
-  var greeting; 
 
-if (num > 24) {greeting= 'Welcome!';}
-   else if ( num > 18) { greeting = 'Good evening!';}
-   else if (num > 12) { greeting = 'Good afternoon!';}
-   else if (num > 0) { greeting = 'Good morning!';}
+
+var today = new Date();
+ var hourNow = today.getHours();
+ var greeting = getGreeting(hourNow);
+
+
+
+
+   for (var i=0; i<100; i++){
+
+   var sumx = prompt("What is the sum of 34 + 19?")
    
+   if (sumx == 53) {
+      alert ('correct answer!');
+      break;
+   }else{
+     sumx = alert("You didn\'t enter the correct number!");
+   }
+   }
+
+   for (var i=0; i<100; i++){
+   var sea = prompt('What is the color of the sea?.... Hint: SKY color');
+   if (sea === 'blue' || sea === 'Blue' || sea === 'BLUE') {
+      alert ('WOW!! You are a Genius!');
+      break;
+   }else{
+     sea = alert("You didn\'t enter the correct color!");
+   }
+}
+
+   var hour = prompt('Now.. What is the hour!');
+
+
+function getGreeting(hour){
+  var greeting; 
+var sum
+if (hour > 24) {greeting= 'Welcome!';}
+   else if ( hour > 18) { greeting = 'Good evening!';}
+   else if (hour > 12) { greeting = 'Good afternoon!';}
+   else if (hour > 0) { greeting = 'Good morning!';}
+   
+   return greeting;
+
+  
+}
 
 document.write( '<h3>' + greeting + '</h3>'); 
